@@ -39,7 +39,7 @@ else:
         with st.chat_message("user"):
             st.markdown(prompt)
 
-        # Generate a response using the OpenAI API.
+        # Generate a response using the OpenAI API,
         stream = client.chat.completions.create(
             model="gpt-3.5-turbo",
             messages=[
